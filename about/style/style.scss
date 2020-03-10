@@ -1,0 +1,323 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:link, a:visited{
+  color: #60606e;
+  text-decoration: none;
+}
+
+.container{
+  padding-left: 0;
+  padding-right: 0;
+  color: #60606e;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background: url("../../images/bg/about_bg.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  .container{
+    padding-bottom: 160px;
+  }
+  .navbar{
+    justify-content: space-between;
+    background-color: transparent!important;
+    p{
+      margin: 0;
+    }
+    button span.navbar-toggler-icon{
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAPAQMAAAAmtobhAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAYGBuIkdVFwAAAAJ0Uk5TAP9bkSK1AAAAFklEQVR4nGP4////Pwb8gKACoBKgGgB2cwj1nmVScgAAAABJRU5ErkJggg==");
+    }
+  }
+  #navbarToggleExternalContent{
+    div{
+      display: flex;
+      justify-content: center;
+      background-color: #7676761c!important;
+      border-radius: 12px;
+      &.p-4 {
+        padding: 12px!important;
+      }
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      width: 572px;
+    }
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 200px;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 28px;
+  }
+}
+
+#about{
+  .container{
+    padding: 150px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    h4{
+      font-size: 14px;
+      font-weight: 600;
+      margin: 29px 0;
+    }
+    .about-us{
+      margin-right: 20px;
+      .text{
+        background-color: #7beec7;
+        width: 67px;
+        height: 21px;
+        position: relative;
+        &::before{
+          content: 'ABOUT US';
+          font-size: 30px;
+          font-weight: 700;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 350px;
+        }
+      }
+    }
+    .what-we-do{
+      margin-left: 20px;
+      .text{
+        background-color: #7beec7;
+        width: 67px;
+        height: 21px;
+        position: relative;
+        &::before{
+          content: 'WHAT WE DO';
+          font-size: 30px;
+          font-weight: 700;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+#benefits{
+  .container{
+    padding: 100px 0;
+    .text{
+      background-color: #7beec7;
+      width: 67px;
+      height: 21px;
+      position: relative;
+      margin: 0 450px;
+      &::before{
+        content: 'WHY CHOOSE US';
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 350px;
+      }
+    }
+    >p{
+      text-align: center;
+      margin-top: 29px;
+    }
+    .list{
+      margin-top: 100px;
+      ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        h4{
+          font-size: 18px;
+          font-weight: 700;
+          display: inline-block;
+          margin-left: 14px;
+        }
+        li{
+          width: 357px;
+          margin-bottom: 50px;
+          p{
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#team{
+  .container{
+    padding: 100px 0;
+    .text{
+      background-color: #7beec7;
+      width: 67px;
+      height: 21px;
+      position: relative;
+      margin: 0 450px;
+      &::before{
+        content: 'THE DREAM TEAM';
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 350px;
+      }
+    }
+    >p{
+      text-align: center;
+      margin-top: 29px;
+    }
+    .team-list{
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      img{
+        margin: 10px;
+      }
+    }
+    .worker-description{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 100px;
+      .carousel{
+        width: 550px;
+        .carousel-indicators li{
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+          background-color: #7beec7;
+        }
+        .carousel-item{
+          height: 340px;
+          img{
+            width: 100px;
+            filter: grayscale(100%);
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+          }
+          p{
+            color: #60606e;
+          }
+          .btn{
+            width: 100px;
+            height: 30px;
+            background-color: #7beec7;
+            color: #fff;
+            margin-bottom: 20px;
+          }
+        }
+        span.carousel-control-prev-icon{
+          width: 33px;
+          height: 33px;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACI0lEQVRoge2YPWgUQRiGn++8PYsUujnFH1BLQaxUcC8SMAg2IYWFXRBBCKQXQo6IC94ZLFLYWCgIFiIIFkoUtVPUi5omNrYWCkZw71A40Y37WSgkRRLubr9dFeYpp3jmfdmZ3ZkFh8PhcDj+Y+RvTHpSb2/Y29p1SWFUkOmaH1zu1ZV7gbMfF/o2ltq3gJE/EVr1/sDv1Vc0ytUR4adX2+NiexY4uDyqm9M4cysw+XluXyw/HwB7LL0FS9laVJtzQwXhOcbhIYcC1eaLU6L6KO1SWYtMC1SbjfOicgPwspojkz0wpvPe1ii+inI6C/9KzAtMRPObilF8B+GYtXs1TAtMRM92F4nvI+y39K6HWYFqq3FAEp0Fdlg5O8FkE1ejl8OS8BQk1/BgUGAqaowLyV2gzyBP16RaQlNRY1zhilWYXkj1BBQmrYL0StollJikSEGqAqLUrYL0SqoCtXLlmihjwJJRnq5J/Rb6XUJHgK8GebrG5DtQKw88LEhhEPhg4esGs9PoBf/wgqcSAG+snJ1gepwOy8F7T2UQ9LGldz3M7wNhOfji+d+HEblu7V6NTC40oQwt1f3gDMK5LPwryfRGVvcrNWAU+JHVHJnfiev9lZuJ6HGgmYU/l78S0/7AE0k4AryzdudSAKC2pfJWYwlUeG3pza0AwMVtwWLpm3dU4d7yqLTSOHMtABDuPNQu+cEJEWYQFkUI887gcDgcDsc/wy+S2oFl0p2/zQAAAABJRU5ErkJggg==");
+        }
+        span.carousel-control-next-icon{
+          width: 33px;
+          height: 33px;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/0lEQVRoge2Yv2sUQRhA37d3e2IR4p5CQC0srbSJsodFOoVYiDaClkHEyi5wP9SDu5yNvRAEC/MPJKiFCBEMtycINoKtYKEhXjaCiObwPouoQQJyYWZ2CcyrZovvzTyW3YUFj8fj8Xj2MGIy3Eh7NxWtCiwUD8SzTZGhrYONilFAfT3ZAMa3rnQx/F660jw8+c3CuUYmMJwf317Khc39gxe11d6EoXNXmAb8gyinJNRe9XP3uE3v/7Aa8JtjQSDdatqdcuDegYsAgChQeVZfT6468v/FVQBACXhUT5OGwz2cBgAISqueJg+aulx0sYHrgC2UmUG678ns2sqYbXU2AQDI2bBQWGn2e0dtWjMMAODEQLR3K3110pYw6wCAI0Mdvqz1u+dsyPIIABgTkceNfnLNVJRXAEBRhXnTiDwDAFChZjKfewBQMBnOPUDgrsl8ngE/gRvtcuW+icTJ530EvgpyuV2On5qKcgjQj4FwvhVV3tiwZR3wFi1Ot8qnP9gSZvcMCM9DlTNzB+0dHrK6A8rDtSi8Pi+TA9tq5wEqcrtTjluu/C4DNhWZ6UTxgsM9XAXIhgqXOlG87Ma/jYuA9zLU6blDlXcO3Duw+xZSfa0DidsZHR7MA778WSgshT9KU52JeNXQuSuMAkTkDvAJ9F4pii9m/V/U4/F4PJ49zy9TbYIKh8uGBwAAAABJRU5ErkJggg==");
+        }
+      }
+      .work{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 555px;
+        height: fit-content;
+        img{
+          margin: 12px 0;
+        }
+      }
+    }
+  }
+}
+
+#work-together{
+  background-color: #7beec7;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    >div{
+      width: 520px;
+      h3{
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      div{
+        width: 165px;
+        height: 50px;
+        background-color: #fff;
+        color: #7beec7;
+        padding: 15px 0 0 28px;
+        font-size: 15px;
+        margin-top: 30px;
+      }
+    }
+    form{
+      width: 546px;
+      background-color: #fff;
+      padding: 18px;
+      h4{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+      }
+      input{
+        border: 1px solid lightgray;
+        height: 50px;
+        width: 375px;
+        padding: 0 8px;
+      }
+      button{
+        border: 1px solid #7beec7;
+        background-color: #7beec7;
+        height: 50px;
+        width: 135px;
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+footer{
+  .container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    nav ul{
+      display: flex;
+      justify-content: space-between;
+      width: 572px;
+    }
+    nav:nth-child(2){
+      p{
+        margin-bottom: 30px;
+      }
+      ul{
+        width: 175px;
+        margin-left: 188px;
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  padding-left: 0;
+  padding-right: 0;
+  color: #60606e;
+}
+
+a:link, a:visited{
+  color: #60606e;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background: url("../../images/bg/about_bg.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  .container{
+    padding-bottom: 160px;
+  }
+  .navbar{
+    justify-content: space-between;
+    background-color: transparent!important;
+    p{
+      margin: 0;
+    }
+    button span.navbar-toggler-icon{
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAPAQMAAAAmtobhAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAYGBuIkdVFwAAAAJ0Uk5TAP9bkSK1AAAAFklEQVR4nGP4////Pwb8gKACoBKgGgB2cwj1nmVScgAAAABJRU5ErkJggg==");
+    }
+  }
+  #navbarToggleExternalContent{
+    div{
+      display: flex;
+      justify-content: center;
+      background-color: #7676761c!important;
+      border-radius: 12px;
+      &.p-4 {
+        padding: 12px!important;
+      }
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      width: 572px;
+    }
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 200px;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 28px;
+  }
+}
+
+#contact-block{
+  .container{
+    padding: 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .form-block{
+      width: 555px;
+      form{
+        input, textarea{
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: #fefcf9;
+          margin-bottom: 28px;
+          padding: 10px;
+        }
+        div{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          input{
+            width: 263px;
+          }
+        }
+        >input:nth-child(2){
+          width: 100%;
+          padding: 10px;
+        }
+        >input:nth-child(4){
+          width: 165px;
+          height: 50px;
+          background-color: #7beec7;
+          color: white;
+        }
+        textarea{
+          width: 100%;
+          height: 200px;
+        }
+      }
+      .contact-info{
+        margin-top: 100px;
+        h4{
+          font-size: 18px;
+          font-weight: 700;
+        }
+        p{
+          margin-top: 30px;
+          line-height: 35px;
+        }
+        >ul{
+          margin-top: 30px;
+          >li{
+            margin-top: 10px;
+          }
+          >li:nth-child(5){
+            margin-top: 30px;
+            ul{
+              width: 175px;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+    .map-block{
+      width: 555px;
+      filter: grayscale(100%);
+      iframe{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+#work-together{
+  background-color: #7beec7;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    >div{
+      width: 520px;
+      h3{
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      div{
+        width: 165px;
+        height: 50px;
+        background-color: #fff;
+        color: #7beec7;
+        padding: 15px 0 0 28px;
+        font-size: 15px;
+        margin-top: 30px;
+      }
+    }
+    form{
+      width: 546px;
+      background-color: #fff;
+      padding: 18px;
+      h4{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+      }
+      input{
+        border: 1px solid lightgray;
+        height: 50px;
+        width: 375px;
+        padding: 0 8px;
+      }
+      button{
+        border: 1px solid #7beec7;
+        background-color: #7beec7;
+        height: 50px;
+        width: 135px;
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+footer{
+  .container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    nav ul{
+      display: flex;
+      justify-content: space-between;
+      width: 572px;
+    }
+    nav:nth-child(2){
+      p{
+        margin-bottom: 30px;
+      }
+      ul{
+        width: 175px;
+        margin-left: 188px;
+      }
+    }
+  }
+}

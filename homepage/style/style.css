@@ -1,0 +1,298 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  color: #60606e;
+}
+
+a:link, a:visited {
+  color: #60606e;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url("../../images/bg/agency_bg.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+header .navbar {
+  justify-content: space-between;
+  background-color: transparent !important;
+}
+header .navbar p {
+  margin: 0;
+}
+header .navbar button span.navbar-toggler-icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAPAQMAAAAmtobhAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAYGBuIkdVFwAAAAJ0Uk5TAP9bkSK1AAAAFklEQVR4nGP4////Pwb8gKACoBKgGgB2cwj1nmVScgAAAABJRU5ErkJggg==");
+}
+header #navbarToggleExternalContent div {
+  display: flex;
+  justify-content: center;
+  background-color: #7676761c !important;
+  border-radius: 12px;
+}
+header #navbarToggleExternalContent div.p-4 {
+  padding: 12px !important;
+}
+header #navbarToggleExternalContent ul {
+  display: flex;
+  justify-content: space-between;
+  width: 572px;
+}
+header .agency-logo {
+  width: 555px;
+  height: 100px;
+  border: 5px solid #60606e;
+  margin: 168px auto 0;
+  text-align: center;
+  position: relative;
+}
+header .agency-logo::after {
+  content: "WE'RE";
+  background-color: #7beec7;
+  width: 90px;
+  height: 25px;
+  position: absolute;
+  top: -30px;
+  left: 228px;
+  font-weight: bold;
+}
+header .agency-logo h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 18px;
+}
+header .container {
+  position: relative;
+}
+header .container > p {
+  width: 537px;
+  display: inline-block;
+  margin: 30px 0 200px;
+}
+header .container > img {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+}
+header .container .history {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+header .container .history .text {
+  background-color: #7beec7;
+  width: 67px;
+  height: 21px;
+  position: relative;
+}
+header .container .history .text::before {
+  content: "HISTORY OF AGENCY";
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+}
+header .container .history p {
+  width: 541px;
+  margin-top: 14px;
+}
+header .container .more {
+  width: 165px;
+  height: 50px;
+  background-color: #7beec7;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  padding-top: 14px;
+}
+
+#choose .container {
+  padding-bottom: 100px;
+}
+#choose .choose-us {
+  margin-top: 240px;
+}
+#choose .choose-us .text {
+  background-color: #7beec7;
+  width: 67px;
+  height: 21px;
+  position: relative;
+  margin: 0 450px;
+}
+#choose .choose-us .text::before {
+  content: "WHY CHOOSE US";
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+}
+#choose .choose-us p {
+  text-align: center;
+  margin-top: 14px;
+}
+#choose .choose-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+#choose .choose-content div {
+  margin-right: 90px;
+}
+#choose .choose-content div ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#choose .choose-content div ul li {
+  margin: 20px;
+}
+#choose .choose-content div ul li:first-child img {
+  padding: 9px 0 8px;
+}
+#choose .choose-content div ul li h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 16px 0 30px;
+}
+
+#portfolio .container {
+  padding-bottom: 100px;
+}
+#portfolio .our-portfolio {
+  margin-top: 120px;
+}
+#portfolio .our-portfolio .text {
+  background-color: #7beec7;
+  width: 67px;
+  height: 21px;
+  position: relative;
+  margin: 0 450px;
+}
+#portfolio .our-portfolio .text::before {
+  content: "OUR PORTFOLIO";
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+}
+#portfolio .our-portfolio p {
+  text-align: center;
+  margin-top: 14px;
+}
+#portfolio .our-work {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+#portfolio .our-work .category {
+  width: 170px;
+}
+#portfolio .our-work .category h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+#portfolio .our-work .row {
+  width: 900px;
+}
+#portfolio .our-work .row .col {
+  flex-grow: 0;
+  padding: 0;
+}
+#portfolio .our-work .row .col img {
+  margin: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#portfolio .our-work .row .col img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 26px 5px rgba(0, 0, 0, 0.26);
+}
+
+#work-together {
+  background-color: #7beec7;
+}
+#work-together .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+#work-together .container > div {
+  width: 520px;
+}
+#work-together .container > div h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+#work-together .container > div div {
+  width: 165px;
+  height: 50px;
+  background-color: #fff;
+  color: #7beec7;
+  padding: 15px 0 0 28px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+#work-together .container form {
+  width: 546px;
+  background-color: #fff;
+  padding: 18px;
+}
+#work-together .container form h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+#work-together .container form input {
+  border: 1px solid lightgray;
+  height: 50px;
+  width: 375px;
+  padding: 0 8px;
+}
+#work-together .container form button {
+  border: 1px solid #7beec7;
+  background-color: #7beec7;
+  height: 50px;
+  width: 135px;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer .container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 572px;
+}
+footer .container nav:nth-child(2) p {
+  margin-bottom: 30px;
+}
+footer .container nav:nth-child(2) ul {
+  width: 175px;
+  margin-left: 188px;
+}
+
+/*# sourceMappingURL=style.css.map */
