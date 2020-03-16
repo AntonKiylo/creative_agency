@@ -1,0 +1,95 @@
+@import "style.css";
+@media (max-width: 1199.98px) {
+  header .container > p {
+    margin-bottom: 90px;
+  }
+  header .container > img.main-image {
+    position: static;
+  }
+  header .container .history {
+    align-items: center;
+    margin-top: 65px;
+    text-align: center;
+  }
+  header .container .history .text {
+    margin: 0 100px;
+  }
+  header .container .more {
+    transform: translate(-82px, 0);
+    left: 50%;
+    right: 50%;
+  }
+
+  #choose .container .choose-us .text {
+    margin: 0 338px;
+  }
+  #choose .container .choose-content > img {
+    height: fit-content;
+  }
+
+  #portfolio .container .our-portfolio .text {
+    margin: 0 338px;
+  }
+  #portfolio .container .our-work {
+    flex-wrap: wrap;
+  }
+  #portfolio .container .our-work .category {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #portfolio .container .our-work .row {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  #choose .container .choose-us .text {
+    margin: 0 226px;
+  }
+  #choose .container .choose-content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #choose .container .choose-content div {
+    margin-right: 0;
+  }
+  #choose .container .choose-content > img {
+    margin-top: 50px;
+  }
+
+  #portfolio .container .our-portfolio .text {
+    margin: 0 226px;
+  }
+
+  footer .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .container nav {
+    margin: 15px auto;
+  }
+  footer .container nav:nth-child(2) ul {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  #choose .container .choose-us .text {
+    margin: 0 122px;
+  }
+
+  #portfolio .container .our-portfolio .text {
+    margin: 0 122px;
+  }
+
+  #work-together .container {
+    flex-wrap: wrap;
+  }
+  #work-together .container > div a {
+    margin-bottom: 20px;
+  }
+  #work-together .container form button {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

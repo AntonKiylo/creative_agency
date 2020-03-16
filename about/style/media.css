@@ -1,0 +1,74 @@
+@import "style.css";
+@media (max-width: 1199.98px) {
+  #benefits .container .text {
+    margin: 0 338px;
+  }
+
+  #team .container .text {
+    margin: 0 338px;
+  }
+  #team .container .worker-description {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 991.98px) {
+  #benefits .container .text {
+    margin: 0 226px;
+  }
+
+  #team .container .text {
+    margin: 0 226px;
+  }
+
+  footer .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .container nav {
+    margin: 15px auto;
+  }
+  footer .container nav:nth-child(2) ul {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  #benefits .container .text {
+    margin: 0 122px;
+  }
+  #benefits .container .list ul {
+    justify-content: center;
+  }
+
+  #team .container .text {
+    margin: 0 122px;
+  }
+  #team .container .team-list {
+    justify-content: center;
+  }
+  #team .container .worker-description .carousel {
+    display: none;
+  }
+
+  #about .container {
+    flex-wrap: wrap;
+  }
+  #about .container .about-us, #about .container .what-we-do {
+    margin: 0 0 40px;
+  }
+  #about .container p, #about .container h4 {
+    text-align: center;
+  }
+
+  #work-together .container {
+    flex-wrap: wrap;
+  }
+  #work-together .container > div div {
+    margin-bottom: 20px;
+  }
+  #work-together .container form button {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

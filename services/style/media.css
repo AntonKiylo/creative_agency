@@ -1,0 +1,69 @@
+@import "style.css";
+@media (max-width: 1199.98px) {
+  #what-we-do .container .title .text {
+    margin: 0 338px;
+  }
+  #what-we-do .container .content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #what-we-do .container .content > img {
+    margin-top: 50px;
+  }
+
+  #pricing .container .title .text {
+    margin: 0 338px;
+  }
+  #pricing .container > ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #pricing .container > ul li {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  #what-we-do .container .title .text {
+    margin: 0 226px;
+  }
+  #what-we-do .container > ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #pricing .container .title .text {
+    margin: 0 226px;
+  }
+
+  footer .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .container nav {
+    margin: 15px auto;
+  }
+  footer .container nav:nth-child(2) ul {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  #what-we-do .container .title .text {
+    margin: 0 122px;
+  }
+
+  #pricing .container .title .text {
+    margin: 0 122px;
+  }
+
+  #work-together .container {
+    flex-wrap: wrap;
+  }
+  #work-together .container > div div {
+    margin-bottom: 20px;
+  }
+  #work-together .container form button {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

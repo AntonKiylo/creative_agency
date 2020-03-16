@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favico/favicon-16x16.png">
     <title>Creative Agency</title>
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="pos-f-t">
-            <nav class="navbar navbar-dark bg-dark">
+        <div class="nav-bar">
+            <div class="logo">
                 <p><b>AKAD.</b></p>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="../about/index.html">ABOUT US</a></li>
-                        <li><a href="../services/index.html">SERVICES</a></li>
-                        <li>PORTFOLIO</li>
-                        <li>BLOG</li>
-                        <li>CONTACT US</li>
-                    </ul>
+                <div class="hamburg-btn not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
+            <nav id="bread-crumbs">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="../about/index.html">ABOUT US</a></li>
+                    <li><a href="../services/index.html">SERVICES</a></li>
+                    <li><a href="../blog/index.html">BLOG</a></li>
+                    <li><a href="../contacts/index.html">CONTACT US</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="agency-logo">
             <h1>CREATIVE AGENCY</h1>
@@ -36,7 +40,7 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <img src="../images/main_image.jpg" alt="main_image">
+        <img src="../images/main_image.jpg" alt="main_image" class="main-image">
         <div class="history">
             <div>
                 <div class="text"></div>
@@ -45,7 +49,7 @@
                 </p>
             </div>
         </div>
-        <div class="more">READ MORE</div>
+        <a class="more" href="../about/index.html" target="_blank" title="about">READ MORE</a>
     </div>
 </header>
 <section id="choose">
@@ -108,27 +112,162 @@
         <div class="our-work">
             <div class="category">
                 <h3>CHOOSE CATEGORY</h3>
-                <p>WEBDESIGN</p>
-                <p>GRAPHIC DESIGN</p>
-                <p>FASHION</p>
-                <p>LOGO DESIGN</p>
-                <p>ADVERTISING</p>
+                <p><a href="https://en.wikipedia.org/wiki/Web_design" target="_blank">WEBDESIGN</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank">GRAPHIC DESIGN</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Fashion_design" target="_blank">FASHION</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Logo" target="_blank">LOGO DESIGN</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Advertising" target="_blank">ADVERTISING</a></p>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="../images/porfolio_1.jpg" alt="porfolio">
-                    <img src="../images/porfolio_4.jpg" alt="porfolio">
-                    <img src="../images/porfolio_7.jpg" alt="porfolio">
+                    <img src="../images/porfolio_1.jpg" alt="portfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable1">
+                    <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_1.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../images/porfolio_4.jpg" alt="portfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable2">
+                    <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_4.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../images/porfolio_7.jpg" alt="porfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable3">
+                    <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_7.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="../images/porfolio_2.jpg" alt="porfolio">
-                    <img src="../images/porfolio_5.jpg" alt="porfolio">
-                    <img src="../images/porfolio_8.jpg" alt="porfolio">
+                    <img src="../images/porfolio_2.jpg" alt="porfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable4">
+                    <div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_2.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../images/porfolio_5.jpg" alt="porfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable5">
+                    <div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_5.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../images/porfolio_8.jpg" alt="porfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable6">
+                    <div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_8.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="../images/porfolio_3.jpg" alt="porfolio">
-                    <img src="../images/porfolio_6.jpg" alt="porfolio">
-                    <img src="../images/porfolio_9.jpg" alt="porfolio">
+                    <img src="../images/porfolio_3.jpg" alt="porfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable7">
+                    <div class="modal fade" id="exampleModalScrollable7" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_3.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../images/porfolio_6.jpg" alt="porfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable8">
+                    <div class="modal fade" id="exampleModalScrollable8" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_6.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../images/porfolio_9.jpg" alt="porfolio" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable9">
+                    <div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Portfolio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/porfolio_9.jpg" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,7 +277,7 @@
     <div class="container">
         <div>
             <h3>YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h3>
-            <div>GET IN TOUCH</div>
+            <a href="../contacts/index.html" target="_blank" title="CONTACT US">GET IN TOUCH</a>
         </div>
         <form>
             <h4>STAY INFORMED WITH OUR NEWSLETTER</h4>
@@ -155,29 +294,39 @@
     <div class="container">
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>
-                <li>BLOG</li>
-                <li>CONTACT US</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="../about/index.html">ABOUT US</a></li>
+                <li><a href="../services/index.html">SERVICES</a></li>
+                <li><a href="../blog/index.html">BLOG</a></li>
+                <li><a href="../contacts/index.html">CONTACT US</a></li>
             </ul>
         </nav>
         <nav>
-            <p>Created by akhouad 2016. All Rights Reserved</p>
+            <p>Created by Anton Kiilo 2020. All Rights Reserved</p>
             <ul>
-                <li><img src="../images/icons/social1.png" alt="social"></li>
-                <li><img src="../images/icons/social2.png" alt="social"></li>
-                <li><img src="../images/icons/social3.png" alt="social"></li>
-                <li><img src="../images/icons/social4.png" alt="social"></li>
-                <li><img src="../images/icons/social5.png" alt="social"></li>
-                <li><img src="../images/icons/social6.png" alt="social"></li>
+                <li><a href="http://youtube.com" title="youtube" target="_blank"><img src="../images/icons/social1.png" alt="social"></a></li>
+                <li><a href="http://twitter.com" title="twitter" target="_blank"><img src="../images/icons/social2.png" alt="social"></a></li>
+                <li><a href="http://facebook.com" title="facebook" target="_blank"><img src="../images/icons/social3.png" alt="social"></a></li>
+                <li><a href="http://linkedin.com" title="linkedin" target="_blank"><img src="../images/icons/social4.png" alt="social"></a></li>
+                <li><a href="http://pinterest.com" title="pinterest" target="_blank"><img src="../images/icons/social5.png" alt="social"></a></li>
+                <li><a href="http://instagram.com" title="instagram" target="_blank"><img src="../images/icons/social6.png" alt="social"></a></li>
             </ul>
         </nav>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<img src="../images/icons/iconfinder-icon.svg" alt="arrow-up" id="button-up">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>

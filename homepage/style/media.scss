@@ -1,0 +1,142 @@
+@import "style.css";
+
+@media (max-width: 1199.98px){
+  header{
+    .container{
+      >p{
+        margin-bottom: 90px;
+      }
+      >img.main-image{
+        position: static;
+      }
+      .history{
+        align-items: center;
+        margin-top: 65px;
+        text-align: center;
+        .text{
+          margin: 0 100px;
+        }
+      }
+      .more{
+        transform: translate(-82px, 0);
+        left: 50%;
+        right: 50%;
+      }
+    }
+  }
+  #choose{
+    .container{
+      .choose-us{
+        .text{
+          margin: 0 338px;
+        }
+      }
+      .choose-content{
+        >img{
+          height: fit-content;
+        }
+      }
+    }
+  }
+  #portfolio{
+    .container{
+      .our-portfolio{
+        .text{
+          margin: 0 338px;
+        }
+      }
+      .our-work{
+        flex-wrap: wrap;
+        .category{
+          margin: 0 auto;
+          text-align: center;
+        }
+        .row{
+          justify-content: space-around;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px){
+  #choose{
+    .container{
+      .choose-us{
+        .text{
+          margin: 0 226px;
+        }
+      }
+      .choose-content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        div{
+          margin-right: 0;
+        }
+        >img{
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+  #portfolio{
+    .container{
+      .our-portfolio{
+        .text{
+          margin: 0 226px;
+        }
+      }
+    }
+  }
+  footer{
+    .container{
+      flex-wrap: wrap;
+      text-align: center;
+      nav{
+        margin: 15px auto;
+        &:nth-child(2){
+          ul{
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #choose{
+    .container{
+      .choose-us{
+        .text{
+          margin: 0 122px;
+        }
+      }
+    }
+  }
+  #portfolio{
+    .container{
+      .our-portfolio{
+        .text{
+          margin: 0 122px;
+        }
+      }
+    }
+  }
+  #work-together{
+    .container{
+      flex-wrap: wrap;
+      >div{
+        a{
+          margin-bottom: 20px;
+        }
+      }
+      form{
+        button{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
